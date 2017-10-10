@@ -1,0 +1,1 @@
+[{"id":"d0b43ca6.a4e9f","type":"http in","z":"eedb5d66.527a6","name":"","url":"/motor","method":"get","upload":false,"swaggerDoc":"","x":90,"y":200,"wires":[["5e6a3d04.e15d14"]]}]
