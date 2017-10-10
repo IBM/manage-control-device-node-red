@@ -82,7 +82,7 @@ cf create-service iotf-service iotf-service-free YOUR_IOT_PLATFORM_NAME
 ```
 
 For YOUR_IOT_PLATFORM_NAME, use *simulate-iot*.  
-Example: `bx cf create-service iotf-service iotf-service-free simulate-iot`
+Example: `cf create-service iotf-service iotf-service-free simulate-iot`
 
 ## Step 2 - Deploy the sample simulate IoT web application  
 
@@ -111,6 +111,7 @@ Example: `https://simulate-iot.mybluemix.net/`.
 ```
 Copy from flow folder the content of flow.txt into `https://simulate-iot.mybluemix.net/red` after you setup an username/password. Paste it under the Menu tab -> Import -> Clipboard and press Import. Now ready for `https://YOUR_APP_NAME.mybluemix.net/motor`
 ```
+[Live Demo](https://simulate-iot.mybluemix.net/motor)
 
 * For more information about registering devices, see [Connecting devices](https://console.bluemix.net/docs/services/IoT/iotplatform_task.html#iotplatform_subtask1).
 4. Continue with [Step 3 - See raw data in Watson IoT Platform](#step-3---see-raw-data-in-watson-iot-platform).
