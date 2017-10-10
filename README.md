@@ -20,7 +20,7 @@ As part of this guide, you will:
 
 > To get started with Watson IoT Platform using a different IoT device, see the [Getting started tutorial](https://console.bluemix.net/docs/services/IoT/getting-started.html#getting-started-with-iotp).
 
-![Architecture Diagram](images/simulate-iot-bluemix-connections.png)
+![Architecture Diagram](images/simulate-iot-bluemix-connections.PNG)
 
 ## Prerequisites
 You will need the following accounts and tools:
@@ -92,7 +92,7 @@ You can start and stop the motor and adjust the speed of the motor. Every change
 
 This sample is using a motor which is a simulated device and can be replaced with any device to perform the same behavior.
 
-![simulate iot app](images/simulate-iot-v02.png)
+![simulate iot app](images/simulate-iot-v02.PNG)
 
 To deploy this setup manually, you can run the following commads:
 ```
