@@ -1,0 +1,14 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: simulate-iot
+  host: simulate-iot
+  disk_quota: 1024M
+  services:
+  - availability-monitoring-auto
+  - simulate-iot-iotf-service
+  - simulate-iot-cloudantNoSQLDB
+  env:
+    NODE_RED_STORAGE_NAME: simulate-iot-cloudantNoSQLDB
