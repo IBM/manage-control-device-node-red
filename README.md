@@ -36,6 +36,7 @@ If you want to deploy directly to Bluemix, click on 'Deploy to Bluemix' button b
 
 After deploying the application, please continue with [Step 3 - See raw data in Watson IoT Platform](#step-3---see-raw-data-in-watson-iot-platform).
 
+> You can also create a Node-Red app manually from Bluemix Catalog.
 ## Steps
 * [Deploy Watson IoT Platform](#step-1----deploy-watson-iot-platform)
 * Do one of the following 2 steps:
@@ -72,7 +73,7 @@ Example: `cf api https://api.ng.bluemix.net`
 
 2. Log into your Bluemix account.
 ```
-cf login
+cf login -u YOUR_BLUEMIX_USERNAME
 ```
 If prompted, select the organization and space where you want to deploy Watson IoT Platform and the sample app. **Note** example a) org: john.doe@ibm.com  b) space = dev
 
@@ -94,15 +95,17 @@ This sample is using a motor which is a simulated device and can be replaced wit
 
 ![simulate iot app](images/simulate-iot-v02.PNG)
 
-To deploy this setup manually, you can run the following commads:
+**To deploy this setup from a terminal instead, you can use the following commands:**
 ```
-cf create-service iotf-service iotf-service-free simulate-iot (You can also create a Node-Red app for this step manually from Bluemix Catalog)
-cf push ${CF_APP} --no-start
-cf bind-service ${CF_APP} simulate-iot
-cf restage ${CF_APP}
-cf start ${CF_APP}
+cf api api.ng.bluemix.net
+cf login -u 4YOUR_BLUEMIX_USERNAME
+cf create-service iotf-service iotf-service-free simulate-iot
+cf push simulate-iot --no-start
+cf bind-service simulate-iot
+cf restage simulate-iot
+cf start simulate-iot
 ```
-> To troubleshoot errors, use `cf logs YOUR_APP_NAME --recent` command.
+> To troubleshoot errors, use `cf logs YOUR_APP_NAME --recent` command (i.e. `cf logs simulate-iot --recent`).
 
 * In a browser, access the app.  
 Open the following URL: `https://YOUR_APP_NAME.mybluemix.net`    
