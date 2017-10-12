@@ -1,4 +1,4 @@
-# simulate-iot - `[Watch video](https://youtu.be/TufD9akAaXY)`   `[Live demo](https://simulate-iot.mybluemix.net/motor)`
+[Watch video](https://youtu.be/TufD9akAaXY)   [Live demo](https://simulate-iot.mybluemix.net/motor)
 
 ![Architecture Diagram](images/simulate-iot.png)
 
