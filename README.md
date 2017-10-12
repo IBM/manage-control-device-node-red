@@ -98,7 +98,7 @@ This sample is using a motor which is a simulated device and can be replaced wit
 **To deploy this setup from a terminal instead, you can use the following commands:**
 ```
 cf api api.ng.bluemix.net
-cf login -u 4YOUR_BLUEMIX_USERNAME
+cf login -u YOUR_BLUEMIX_USERNAME
 cf create-service iotf-service iotf-service-free simulate-iot
 cf push simulate-iot --no-start
 cf bind-service simulate-iot
