@@ -177,7 +177,7 @@ A list of card names is displayed.
 
 For more information about creating boards and cards, see [Visualizing real-time data by using boards and cards](https://console.bluemix.net/docs/services/IoT/data_visualization.html#boards_and_cards).
 
-[![live-demo](https://github.com/IBM/manage-control-device-node-red/blob/master/images/live-demo-btn.PNG)](https://simulate-iot.mybluemix.net/motor)  [![watch-video](https://github.com/IBM/manage-control-device-node-red/blob/master/images/get-video-btn.PNG)](https://github.com/IBM/manage-control-device-node-red)
+[![live-demo](https://github.com/IBM/manage-control-device-node-red/blob/master/images/live-demo-btn.PNG)](https://simulate-iot.mybluemix.net/motor)  [![watch-video](https://github.com/IBM/manage-control-device-node-red/blob/master/images/watch-video-btn.PNG)](https://youtu.be/TufD9akAaXY)
 
 ## Useful links
 
