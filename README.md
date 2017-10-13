@@ -1,6 +1,4 @@
-[Watch video](https://youtu.be/TufD9akAaXY)                     [Live demo](https://simulate-iot.mybluemix.net/motor)
-
-![Architecture Diagram](images/simulate-iot.png)
+![Architecture Diagram](images/steps-architecture.png)
 
 # Connecting a motor device as a simulated device
 Build an IoT project with a simualted device that sends events for data monitoring on Watson IoT Platform on Bluemix.
@@ -174,9 +172,12 @@ A list of card names is displayed.
 6. On the card preview page, select **L**, and then click **Next**.
 7. On the card information page, change the name of the title to `Motor data` and then click **Submit**.
 8. Change the speed of your motor to see live data in your new card.
-9. Optional: Add a second data set to add acceleration data for the motor.  
+9. Optional: Add a second data set to add acceleration data for the motor.
+![speed-chart](https://github.com/IBM/manage-control-device-node-red/blob/master/images/speed-chart.PNG)  
 
 For more information about creating boards and cards, see [Visualizing real-time data by using boards and cards](https://console.bluemix.net/docs/services/IoT/data_visualization.html#boards_and_cards).
+
+[![live-demo](https://github.com/IBM/manage-control-device-node-red/blob/master/images/live-demo-btn.PNG)](https://simulate-iot.mybluemix.net/motor)  [![get-code](https://github.com/IBM/manage-control-device-node-red/blob/master/images/get-code-btn.PNG)](https://github.com/IBM/manage-control-device-node-red)
 
 ## Useful links
 
