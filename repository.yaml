@@ -1,7 +1,10 @@
-id: simulate-iot
+id: manage-control-device-node-red
 event_id: web
 event_organizer: dev-journeys
 runtimes:
   - Cloud Foundry
 services:
-  - Watson IoT Platform
+  - Internet of Things Platform
+  - Cloudant NoSQL DB
+  - NodeRed
+language: nodejs
