@@ -21,9 +21,13 @@ stages:
         type: deployer
         script: |-
             #!/bin/bash
-            cf create-service iotf-service iotf-service-free iotp-for-conveyor
+            cf create-service iotf-service iotf-service-free simulate-iot-iotf-service
+            cf create-service cloudantNoSQLDB Lite simulate-iot-cloudantNoSQLDB
+            cf create-service AvailabilityMonitoring Lite availability-monitoring-auto
             cf push ${CF_APP} --no-start
-            cf bind-service ${CF_APP} iotp-for-conveyor
+            cf bind-service ${CF_APP} simulate-iot-iotf-service
+            cf bind-service ${CF_APP} simulate-iot-cloudantNoSQLDB
+            cf bind-service ${CF_APP} availability-monitoring-auto
             cf restage ${CF_APP}
             cf start ${CF_APP}
         target:

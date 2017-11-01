@@ -1,3 +1,5 @@
+![Bluemix Deployments](https://metrics-tracker.mybluemix.net/stats/103baca0d9db927ea5e6decf1da19ff3/badge.svg)
+
 ![Architecture Diagram](images/steps-architecture.png)
 
 # Connecting a motor device as a simulated device
@@ -30,7 +32,7 @@ If you choose to use Git to download the code samples you must also have a [GitH
 ## Deploy to Bluemix
 If you want to deploy directly to Bluemix, click on 'Deploy to Bluemix' button below to create a Bluemix DevOps service toolchain and pipeline for deploying basic motor with an IoT device that sends monitoring data to Watson IoT Platform on Bluemix, else jump to [Steps](#steps)
 
-[![Deploy to Bluemix](images/deploy-btn.PNG)](https://console.ng.bluemix.net/devops/setup/deploy/?repository=https://github.com/IBM/simulate-iot)
+[![Deploy to Bluemix](https://metrics-tracker.mybluemix.net/stats/103baca0d9db927ea5e6decf1da19ff3/button.svg)](https://console.ng.bluemix.net/devops/setup/deploy/?repository=https://github.com/IBM/manage-control-device-node-red)
 
 After deploying the application, please continue with [Step 3 - See raw data in Watson IoT Platform](#step-3---see-raw-data-in-watson-iot-platform).
 
@@ -188,26 +190,27 @@ For more information about creating boards and cards, see [Visualizing real-time
 * [IBM Watson IoT Platform](http://www.ibm.com/internet-of-things/iot-solutions/watson-iot-platform/)   
 * [IBM Watson IoT Platform Developers Community](https://developer.ibm.com/iotplatform/)
 
-## Privacy notice
+## Privacy Notice
 
-This web application includes code to track deployments to [IBM Bluemix](https://www.bluemix.net/) and other Cloud Foundry platforms. The following information is sent to a [Deployment Tracker](https://github.com/IBM/metrics-collector-service) service on each deployment:
+Sample web applications that include this package may be configured to track deployments to [IBM Bluemix](https://www.bluemix.net/) and other Cloud Foundry platforms. The following information is sent to a [Deployment Tracker](https://github.com/IBM/metrics-collector-service) service on each deployment:
 
 * Node.js package version
 * Node.js repository URL
 * Application Name (`application_name`)
 * Application GUID (`application_id`)
 * Application instance index number (`instance_index`)
-* Space ID (`space_id`)
+* Space ID (`space_id`) or OS username
 * Application Version (`application_version`)
 * Application URIs (`application_uris`)
-* Labels of bound services
+* Cloud Foundry API (`cf_api`)
+* Labels and names of bound services
 * Number of instances for each bound service and associated plan information
 * Metadata in the repository.yaml file
 
 This data is collected from the `package.json` and `repository.yaml` file in the sample application and the `VCAP_APPLICATION` and `VCAP_SERVICES` environment variables in IBM Bluemix and other Cloud Foundry platforms. This data is used by IBM to track metrics around deployments of sample applications to IBM Bluemix to measure the usefulness of our examples, so that we can continuously improve the content we offer to you. Only deployments of sample applications that include code to ping the Deployment Tracker service will be tracked.
 
 ## Disabling deployment tracking
-Deployment tracking can be disabled by removing the `require("metrics-tracker-client").track();` line from the './bin/www' file.
+Deployment tracking can be disabled by removing the `require("metrics-tracker-client").track();` line from the 'index.js' file.
 
 ## License
 [Apache 2.0](LICENSE)
