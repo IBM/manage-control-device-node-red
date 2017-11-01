@@ -30,7 +30,7 @@ If you choose to use Git to download the code samples you must also have a [GitH
 ## Deploy to Bluemix
 If you want to deploy directly to Bluemix, click on 'Deploy to Bluemix' button below to create a Bluemix DevOps service toolchain and pipeline for deploying basic motor with an IoT device that sends monitoring data to Watson IoT Platform on Bluemix, else jump to [Steps](#steps)
 
-[![Deploy to Bluemix](https://metrics-tracker.mybluemix.net/stats/10963692ccbfc7cd46c6d15f02959c71/button.svg)](https://console.ng.bluemix.net/devops/setup/deploy/?repository=https://github.com/IBM/simulate-iot)
+[Deploy to Bluemix](https://console.ng.bluemix.net/devops/setup/deploy/?repository=https://github.com/IBM/simulate-iot)
 
 After deploying the application, please continue with [Step 3 - See raw data in Watson IoT Platform](#step-3---see-raw-data-in-watson-iot-platform).
 
