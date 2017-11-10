@@ -21,6 +21,7 @@ As part of this guide, you will:
 > To get started with Watson IoT Platform using a different IoT device, see the [Getting started tutorial](https://console.bluemix.net/docs/services/IoT/getting-started.html#getting-started-with-iotp).
 
 ![Architecture Diagram](images/simulate-iot-bluemix-connections.PNG)
+
 Click here to view the [IBM Pattern](https://developer.ibm.com/code/patterns/develop-an-iot-app-with-node-red-and-watson/) for this project.
 
 ## Prerequisites
