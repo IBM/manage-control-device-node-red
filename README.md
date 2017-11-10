@@ -21,22 +21,23 @@ As part of this guide, you will:
 > To get started with Watson IoT Platform using a different IoT device, see the [Getting started tutorial](https://console.bluemix.net/docs/services/IoT/getting-started.html#getting-started-with-iotp).
 
 ![Architecture Diagram](images/simulate-iot-bluemix-connections.PNG)
+Click here to view the [IBM Pattern](https://developer.ibm.com/code/patterns/develop-an-iot-app-with-node-red-and-watson/) for this project.
 
 ## Prerequisites
 You will need the following accounts and tools:
-* [Bluemix account](https://console.ng.bluemix.net/registration/)
+* [IBM Cloud account](https://console.ng.bluemix.net/registration/)
 * [Bluemix CLI](https://console.bluemix.net/docs/cli/reference/bluemix_cli/index.html#getting-started)
 * Optional: [Git](https://git-scm.com/downloads)
 If you choose to use Git to download the code samples you must also have a [GitHub.com account](https://github.com). You can also download the code as a compressed file without a GitHub.com account.
 
-## Deploy to Bluemix
-If you want to deploy directly to Bluemix, click on 'Deploy to Bluemix' button below to create a Bluemix DevOps service toolchain and pipeline for deploying basic motor with an IoT device that sends monitoring data to Watson IoT Platform on Bluemix, else jump to [Steps](#steps)
+## Deploy to IBM Cloud
+If you want to deploy directly to IBM Cloud, click on 'Deploy to Bluemix' button below to create a IBM Cloud DevOps service toolchain and pipeline for deploying basic motor with an IoT device that sends monitoring data to Watson IoT Platform on IBM Cloud, else jump to [Steps](#steps)
 
-[![Deploy to Bluemix](https://metrics-tracker.mybluemix.net/stats/103baca0d9db927ea5e6decf1da19ff3/button.svg)](https://console.ng.bluemix.net/devops/setup/deploy/?repository=https://github.com/IBM/manage-control-device-node-red)
+[![Deploy to IBM Cloud](https://metrics-tracker.mybluemix.net/stats/103baca0d9db927ea5e6decf1da19ff3/button.svg)](https://console.ng.bluemix.net/devops/setup/deploy/?repository=https://github.com/IBM/manage-control-device-node-red)
 
 After deploying the application, please continue with [Step 3 - See raw data in Watson IoT Platform](#step-3---see-raw-data-in-watson-iot-platform).
 
-> You can also create a Node-Red app manually from Bluemix Catalog.
+> You can also create a Node-Red app manually from IBM Cloud Catalog.
 ## Steps
 * [Deploy Watson IoT Platform](#step-1----deploy-watson-iot-platform)
 * Do one of the following 2 steps:
@@ -48,7 +49,7 @@ After deploying the application, please continue with [Step 3 - See raw data in 
 
 ## Step 1 -  Deploy Watson IoT Platform
 
-> Watson IoT Platform provides powerful application access to IoT devices and data to help you rapidly compose analytics applications, visualization dashboards, and mobile IoT apps. The steps that follow will deploy an instance of the Watson IoT Platform service with the name `simulate-iot` in your Bluemix environment. If you already have a service instance running, you can use that instance with the guide and skip this first step. Just make sure that you use the correct service name and Bluemix space when you proceed through the guides.
+> Watson IoT Platform provides powerful application access to IoT devices and data to help you rapidly compose analytics applications, visualization dashboards, and mobile IoT apps. The steps that follow will deploy an instance of the Watson IoT Platform service with the name `simulate-iot` in your IBM Cloud environment. If you already have a service instance running, you can use that instance with the guide and skip this first step. Just make sure that you use the correct service name and IBM Cloud space when you proceed through the guides.
 
 1. From the command line, set your API endpoint by running the cf api command.   
 Replace the `API-ENDPOINT` value with the API endpoint for your region.
@@ -71,13 +72,13 @@ Example: `cf api https://api.ng.bluemix.net`
 </tr>
 </table>
 
-2. Log into your Bluemix account.
+2. Log into your IBM Cloud account.
 ```
 cf login -u YOUR_BLUEMIX_USERNAME
 ```
 If prompted, select the organization and space where you want to deploy Watson IoT Platform and the sample app. **Note** example a) org: john.doe@ibm.com  b) space = dev
 
-3. Deploy the Watson IoT Platform service to Bluemix.
+3. Deploy the Watson IoT Platform service to IBM Cloud.
 ```    
 cf create-service iotf-service iotf-service-free YOUR_IOT_PLATFORM_NAME
 ```
@@ -87,9 +88,9 @@ Example: `cf create-service iotf-service iotf-service-free simulate-iot`
 
 ## Step 2 - Deploy the sample simulate IoT web application  
 
-The sample app lets you simulate a Bluemix connected industrial devices.
+The sample app lets you simulate a IBM Cloud connected industrial devices.
 
-You can start and stop the motor and adjust the speed of the motor. Every change to the motor is sent to Bluemix in the form of an MQTT message that is displayed in the app. You can monitor the motor behavior by using the default dashboard cards.
+You can start and stop the motor and adjust the speed of the motor. Every change to the motor is sent to IBM Cloud in the form of an MQTT message that is displayed in the app. You can monitor the motor behavior by using the default dashboard cards.
 
 This sample is using a motor which is a simulated device and can be replaced with any device to perform the same behavior.
 
@@ -124,7 +125,7 @@ Copy from flow folder the content of flow.txt into `https://simulate-iot.mybluem
 ## Step 3 - See raw data in Watson IoT Platform
 
 1. Verify that the device is registered with Watson IoT Platform.
-    * Login to your Bluemix dashboard at:  [https://bluemix.net](https://bluemix.net/)
+    * Login to your IBM Cloud dashboard at:  [https://bluemix.net](https://bluemix.net/)
     * From [your list of services](https://bluemix.net/dashboard/services), click the *simulate-iot-iotf-service* Watson IoT Platform} service.
     * Click *Launch* to open the Watson IoT Platform dashboard in a new browser tab.  
         You can bookmark the URL for easy access later.   
@@ -183,16 +184,16 @@ For more information about creating boards and cards, see [Visualizing real-time
 
 ## Useful links
 
-* [IBM Bluemix](https://bluemix.net/)  
-* [IBM Bluemix Documentation](https://www.ng.bluemix.net/docs/)  
-* [IBM Bluemix Developers Community](http://developer.ibm.com/bluemix)  
+* [IBM Cloud](https://bluemix.net/)  
+* [IBM Cloud Documentation](https://www.ng.bluemix.net/docs/)  
+* [IBM Cloud Developers Community](http://developer.ibm.com/bluemix)  
 * [IBM Watson Internet of Things](http://www.ibm.com/internet-of-things/)  
 * [IBM Watson IoT Platform](http://www.ibm.com/internet-of-things/iot-solutions/watson-iot-platform/)   
 * [IBM Watson IoT Platform Developers Community](https://developer.ibm.com/iotplatform/)
 
 ## Privacy Notice
 
-Sample web applications that include this package may be configured to track deployments to [IBM Bluemix](https://www.bluemix.net/) and other Cloud Foundry platforms. The following information is sent to a [Deployment Tracker](https://github.com/IBM/metrics-collector-service) service on each deployment:
+Sample web applications that include this package may be configured to track deployments to [IBM Cloud](https://www.bluemix.net/) and other Cloud Foundry platforms. The following information is sent to a [Deployment Tracker](https://github.com/IBM/metrics-collector-service) service on each deployment:
 
 * Node.js package version
 * Node.js repository URL
@@ -207,7 +208,7 @@ Sample web applications that include this package may be configured to track dep
 * Number of instances for each bound service and associated plan information
 * Metadata in the repository.yaml file
 
-This data is collected from the `package.json` and `repository.yaml` file in the sample application and the `VCAP_APPLICATION` and `VCAP_SERVICES` environment variables in IBM Bluemix and other Cloud Foundry platforms. This data is used by IBM to track metrics around deployments of sample applications to IBM Bluemix to measure the usefulness of our examples, so that we can continuously improve the content we offer to you. Only deployments of sample applications that include code to ping the Deployment Tracker service will be tracked.
+This data is collected from the `package.json` and `repository.yaml` file in the sample application and the `VCAP_APPLICATION` and `VCAP_SERVICES` environment variables in IBM Cloud and other Cloud Foundry platforms. This data is used by IBM to track metrics around deployments of sample applications to IBM Cloud to measure the usefulness of our examples, so that we can continuously improve the content we offer to you. Only deployments of sample applications that include code to ping the Deployment Tracker service will be tracked.
 
 ## Disabling deployment tracking
 Deployment tracking can be disabled by removing the `require("metrics-tracker-client").track();` line from the 'index.js' file.
