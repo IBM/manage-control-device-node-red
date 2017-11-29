@@ -123,6 +123,8 @@ Copy from flow folder the content of flow.txt into `https://simulate-iot.mybluem
 * For more information about registering devices, see [Connecting devices](https://console.bluemix.net/docs/services/IoT/iotplatform_task.html#iotplatform_subtask1).
 4. Continue with [Step 3 - See raw data in Watson IoT Platform](#step-3---see-raw-data-in-watson-iot-platform).
 
+> [How to create an API key and token in Watson IoT Platform](https://developer.ibm.com/code/howtos/#!/howto/iot-generate-apikey-apitoken)
+
 ## Step 3 - See raw data in Watson IoT Platform
 
 1. Verify that the device is registered with Watson IoT Platform.
