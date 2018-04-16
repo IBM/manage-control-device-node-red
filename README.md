@@ -8,6 +8,13 @@ Build an IoT project with a simualted device that sends events for data monitori
 ## Overview and goal
 This guide steps you through the process of connecting devices to Watson IoT Platform, monitoring and acting on device data.
 
+<u>The outcome of this project will help you: </u>
+* manage and control simulated devices
+* control their speed
+* understand and hands-on the IoT Platform 
+* Explore different ways on how to visualize your data
+* Explore different ways to build an UI with node-red
+
 We set up a connected simulated motor and use it to send IoT data to Watson IoT Platform.
 
 The app self-registers a device with Watson IoT Platform and automatically sends well-formatted data to the platform.
@@ -27,7 +34,7 @@ Click here to view the [IBM Pattern](https://developer.ibm.com/code/patterns/dev
 ## Prerequisites
 You will need the following accounts and tools:
 * [IBM Cloud account](https://console.ng.bluemix.net/registration/)
-* [Bluemix CLI](https://console.bluemix.net/docs/cli/reference/bluemix_cli/index.html#getting-started)
+* [Bluemix CLI](https://console.bluemix.net/docs/cli/reference/bluemix_cli/index.html)
 * Optional: [Git](https://git-scm.com/downloads)
 If you choose to use Git to download the code samples you must also have a [GitHub.com account](https://github.com). You can also download the code as a compressed file without a GitHub.com account.
 
@@ -40,13 +47,10 @@ After deploying the application, please continue with [Step 3 - See raw data in 
 
 > You can also create a Node-Red app manually from IBM Cloud Catalog.
 ## Steps
-* [Deploy Watson IoT Platform](#step-1----deploy-watson-iot-platform)
-* Do one of the following 2 steps:
-
-   - [Deploy the sample simulate-iot web application](#step-2---deploy-the-sample-simulate-iot-web-application)
-
-* [See raw data in Watson IoT Platform](#step-3---see-raw-data-in-watson-iot-platform)
-* [Visualize live data in Watson IoT Platform](#step-4---visualize-live-data-in-watson-iot-platform)
+1) [Deploy Watson IoT Platform](#step-1----deploy-watson-iot-platform)
+2) [Deploy the node-red simulate iot app (make sure you rename your app)](#step-2---deploy-the-sample-simulate-iot-web-application)
+3) [See raw data in Watson IoT Platform](#step-3---see-raw-data-in-watson-iot-platform)
+4) [Visualize live data in Watson IoT Platform](#step-4---visualize-live-data-in-watson-iot-platform)
 
 ## Step 1 -  Deploy Watson IoT Platform
 
