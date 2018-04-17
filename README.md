@@ -41,8 +41,6 @@ If you choose to use Git to download the code samples you must also have a [GitH
 ## Deploy to IBM Cloud
 If you want to deploy directly to IBM Cloud, click on 'Deploy to IBM Cloud' button below to create a IBM Cloud DevOps service toolchain and pipeline for deploying basic motor with an IoT device that sends monitoring data to Watson IoT Platform on IBM Cloud, else jump to [Steps](#steps)
 
-[![](https://raw.githubusercontent.com/IBM/manage-control-device-node-red/master/images/deploy-btn.PNG)](https://console.ng.bluemix.net/devops/setup/deploy/?repository=https://github.com/IBM/manage-control-device-node-red)
-
 [![Deploy to IBM Cloud](https://metrics-tracker.mybluemix.net/stats/103baca0d9db927ea5e6decf1da19ff3/button.svg)](https://console.ng.bluemix.net/devops/setup/deploy/?repository=https://github.com/IBM/manage-control-device-node-red)
 
 After deploying the application, please continue with [Step 3 - See raw data in Watson IoT Platform](#step-3---see-raw-data-in-watson-iot-platform).
