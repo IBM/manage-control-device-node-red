@@ -2,8 +2,8 @@
 
 ![Architecture Diagram](images/steps-architecture.png)
 
-# Connecting a motor device as a simulated device
-Build an IoT project with a simulated device that sends events for data monitoring on Watson IoT Platform on IBM Cloud.
+# [Connecting a motor device as a simulated device](https://developer.ibm.com/code/patterns/develop-an-iot-app-with-node-red-and-watson/)
+Build an IoT project with a simualted device that sends events for data monitoring on Watson IoT Platform on IBM Cloud.
 
 ## Overview and goal
 This guide steps you through the process of connecting devices to Watson IoT Platform, monitoring and acting on device data.
@@ -219,6 +219,18 @@ This data is collected from the `package.json` and `repository.yaml` file in the
 
 ## Disabling deployment tracking
 Deployment tracking can be disabled by removing the `require("metrics-tracker-client").track();` line from the `index.js` file.
+
+## <h2>Learn more</h2>
+<ul>
+<li><strong>Artificial Intelligence Code Patterns</strong>: Enjoyed this Code Pattern? Check out our other <a href="https://developer.ibm.com/code/technologies/artificial-intelligence/" rel="nofollow">AI Code Patterns</a>.</li>
+<li><strong>Data Analytics Code Patterns</strong>: Enjoyed this Code Pattern? Check out our other <a href="https://developer.ibm.com/code/technologies/data-science/" rel="nofollow">Data Analytics Code Patterns</a></li>
+<li><strong>AI and Data Code Pattern Playlist</strong>: Bookmark our <a href="https://www.youtube.com/playlist?list=PLzUbsvIyrNfknNewObx5N7uGZ5FKH0Fde" rel="nofollow">playlist</a> with all of our Code Pattern videos</li>
+<li><strong>With Watson</strong>: Want to take your Watson app to the next level? Looking to utilize Watson Brand assets? <a href="https://www.ibm.com/watson/with-watson/" rel="nofollow">Join the With Watson program</a> to leverage exclusive brand, marketing, and tech resources to amplify and accelerate your Watson embedded commercial solution.</li>
+<li><strong>Data Science Experience</strong>: Master the art of data science with IBM's <a href="https://datascience.ibm.com/" rel="nofollow">Data Science Experience</a></li>
+<li><strong>PowerAI</strong>: Get started or get scaling, faster, with a software distribution for machine learning running on the Enterprise Platform for AI: <a href="https://www.ibm.com/ms-en/marketplace/deep-learning-platform" rel="nofollow">IBM Power Systems</a></li>
+<li><strong>Spark on IBM Cloud</strong>: Need a Spark cluster? Create up to 30 Spark executors on IBM Cloud with our <a href="https://console.bluemix.net/catalog/services/apache-spark" rel="nofollow">Spark service</a></li>
+<li><strong>Kubernetes on IBM Cloud</strong>: Deliver your apps with the combined the power of <a href="https://www.ibm.com/cloud-computing/bluemix/containers" rel="nofollow">Kubernetes and Docker on IBM Cloud</a></li>
+</ul>
 
 ## License
 [Apache 2.0](LICENSE)
