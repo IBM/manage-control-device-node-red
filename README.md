@@ -39,7 +39,7 @@ You will need the following accounts and tools:
 If you choose to use Git to download the code samples you must also have a [GitHub.com account](https://github.com). You can also download the code as a compressed file without a GitHub.com account.
 
 ## Deploy to IBM Cloud
-If you want to deploy directly to IBM Cloud, click on 'Deploy to IBM Cloud' button below to create a IBM Cloud DevOps service toolchain and pipeline for deploying basic motor with an IoT device that sends monitoring data to Watson IoT Platform on IBM Cloud, else jump to [Steps](#steps)
+If you want to deploy directly to IBM Cloud, click on `Deploy to IBM Cloud` button below to create a IBM Cloud DevOps service toolchain and pipeline for deploying basic motor with an IoT device that sends monitoring data to Watson IoT Platform on IBM Cloud, else jump to [Steps](#steps)
 
 [![Deploy to IBM Cloud](https://metrics-tracker.mybluemix.net/stats/103baca0d9db927ea5e6decf1da19ff3/button.svg)](https://console.ng.bluemix.net/devops/setup/deploy/?repository=https://github.com/IBM/manage-control-device-node-red)
 
