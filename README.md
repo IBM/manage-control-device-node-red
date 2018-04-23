@@ -111,7 +111,7 @@ bx login -u YOUR_BLUEMIX_USERNAME -o org_name -s space_name
 bx create-service iotf-service iotf-service-free simulate-iot
 bx app push YOUR_APP_NAME
 ```
-> To troubleshoot errors, use `bx logs YOUR_APP_NAME --recent` command (i.e. `bx logs simulate-iot --recent`).
+> To troubleshoot errors, use `bx app logs YOUR_APP_NAME --recent` command (i.e. `bx app logs simulate-iot --recent`).
 
 * In a browser, access the app.  
 Open the following URL: `https://YOUR_APP_NAME.mybluemix.net`    
