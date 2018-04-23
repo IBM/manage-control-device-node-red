@@ -1,5 +1,5 @@
 Skill Level: Any Skill Level
-<u>N.B:</u> All services used in this repo are Lite plans.
+<br><u>N.B:</u> All services used in this repo are Lite plans.
 
 ![IBM Cloud Deployments](https://metrics-tracker.mybluemix.net/stats/103baca0d9db927ea5e6decf1da19ff3/badge.svg)
 
@@ -62,9 +62,9 @@ After deploying the application, please continue with [Step 3 - See raw data in 
 1. From the command line, set your API endpoint by running the bx api command.   
 Replace the `API-ENDPOINT` value with the API endpoint for your region.
 ```
-bluemix api <API-ENDPOINT>
+bx api <API-ENDPOINT>
 ```
-Example: `bluemix api https://api.ng.bluemix.net`
+Example: `bx api https://api.ng.bluemix.net`
 <table>
 <tr>
 <th>Region</th>
