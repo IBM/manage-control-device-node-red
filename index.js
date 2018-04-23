@@ -45,6 +45,7 @@ if (!settings.adminAuth) {
                 }
             };
 
+            // save auth
             if (runtimeSettings.bluemixConfig && runtimeSettings.bluemixConfig.hasOwnProperty('adminAuth')) {
                 delete runtimeSettings.bluemixConfig.adminAuth;
                 storage.saveSettings(runtimeSettings).then(function() {
@@ -57,6 +58,7 @@ if (!settings.adminAuth) {
             util.log("Using runtime settings for adminAuth");
             startNodeRED(runtimeSettings.bluemixConfig);
         } else {
+          // server initialization
             util.log("Starting first-use setup");
             var server;
             var express = require('express');
@@ -66,6 +68,7 @@ if (!settings.adminAuth) {
             app.get("/", function(req,res) {
                 res.sendFile(path.join(__dirname,"public","first-run.html"));
             });
+            // handle apis
             app.post("/setup", function(req,res) {
                 if (req.body.adminAuth && req.body.adminAuth.password) {
                 	util.log("Received password: " + req.body.adminAuth.password);
@@ -88,6 +91,7 @@ if (!settings.adminAuth) {
                     res.status(200).end();
                 });
             });
+            // run the server
             app.use("/",express.static(path.join(__dirname,"public")));
             var http = require('http');
             server = http.createServer(function(req,res) {app(req,res);});
@@ -103,6 +107,7 @@ if (!settings.adminAuth) {
     startNodeRED({});
 }
 
+// start node red
 function startNodeRED(config) {
     if (config.adminAuth && !settings.adminAuth) {
         util.log("Enabling adminAuth security - set NODE_RED_USERNAME and NODE_RED_PASSWORD to change credentials");

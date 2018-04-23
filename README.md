@@ -1,6 +1,9 @@
+Skill Level: Any Skill Level
+<u>N.B:</u> All services used in this repo are Lite plans.
+
 ![IBM Cloud Deployments](https://metrics-tracker.mybluemix.net/stats/103baca0d9db927ea5e6decf1da19ff3/badge.svg)
 
-![Architecture Diagram](images/steps-architecture.png)
+![Architecture Diagram](images/conveyor-arch-iot-1.png)
 
 # [Connecting a motor device as a simulated device](https://developer.ibm.com/code/patterns/develop-an-iot-app-with-node-red-and-watson/)
 Build an IoT project with a simualted device that sends events for data monitoring on Watson IoT Platform on IBM Cloud.
@@ -11,7 +14,7 @@ This guide steps you through the process of connecting devices to Watson IoT Pla
 <u>The outcome of this project will help you: </u>
 * manage and control simulated devices
 * control their speed
-* understand and hands-on the IoT Platform 
+* understand and hands-on the IoT Platform
 * Explore different ways on how to visualize your data
 * Explore different ways to build an UI with node-red
 
@@ -56,12 +59,12 @@ After deploying the application, please continue with [Step 3 - See raw data in 
 
 > Watson IoT Platform provides powerful application access to IoT devices and data to help you rapidly compose analytics applications, visualization dashboards, and mobile IoT apps. The steps that follow will deploy an instance of the Watson IoT Platform service with the name `simulate-iot` in your IBM Cloud environment. If you already have a service instance running, you can use that instance with the guide and skip this first step. Just make sure that you use the correct service name and IBM Cloud space when you proceed through the guides.
 
-1. From the command line, set your API endpoint by running the cf api command.   
+1. From the command line, set your API endpoint by running the bx api command.   
 Replace the `API-ENDPOINT` value with the API endpoint for your region.
 ```
-cf api <API-ENDPOINT>
+bluemix api <API-ENDPOINT>
 ```
-Example: `cf api https://api.ng.bluemix.net`
+Example: `bluemix api https://api.ng.bluemix.net`
 <table>
 <tr>
 <th>Region</th>
@@ -79,17 +82,17 @@ Example: `cf api https://api.ng.bluemix.net`
 
 2. Log into your IBM Cloud account.
 ```
-cf login -u YOUR_BLUEMIX_USERNAME
+bx login -u YOUR_BLUEMIX_USERNAME -o org_name -s space_name
 ```
 If prompted, select the organization and space where you want to deploy Watson IoT Platform and the sample app. **Note** example a) org: john.doe@ibm.com  b) space = dev
 
 3. Deploy the Watson IoT Platform service to IBM Cloud.
 ```    
-cf create-service iotf-service iotf-service-free YOUR_IOT_PLATFORM_NAME
+bx create-service iotf-service iotf-service-free YOUR_IOT_PLATFORM_NAME
 ```
 
 For YOUR_IOT_PLATFORM_NAME, use *simulate-iot*.  
-Example: `cf create-service iotf-service iotf-service-free simulate-iot`
+Example: `bx create-service iotf-service iotf-service-free simulate-iot`
 
 ## Step 2 - Deploy the sample simulate IoT web application  
 
@@ -103,15 +106,12 @@ This sample is using a motor which is a simulated device and can be replaced wit
 
 **To deploy this setup from a terminal instead, you can use the following commands:**
 ```
-cf api api.ng.bluemix.net
-cf login -u YOUR_BLUEMIX_USERNAME
-cf create-service iotf-service iotf-service-free simulate-iot
-cf push simulate-iot --no-start
-cf bind-service simulate-iot
-cf restage simulate-iot
-cf start simulate-iot
+bx api https://api.ng.bluemix.net
+bx login -u YOUR_BLUEMIX_USERNAME -o org_name -s space_name
+bx create-service iotf-service iotf-service-free simulate-iot
+bx app push YOUR_APP_NAME
 ```
-> To troubleshoot errors, use `cf logs YOUR_APP_NAME --recent` command (i.e. `cf logs simulate-iot --recent`).
+> To troubleshoot errors, use `bx logs YOUR_APP_NAME --recent` command (i.e. `bx logs simulate-iot --recent`).
 
 * In a browser, access the app.  
 Open the following URL: `https://YOUR_APP_NAME.mybluemix.net`    
@@ -210,7 +210,6 @@ Sample web applications that include this package may be configured to track dep
 * Space ID (`space_id`) or OS username
 * Application Version (`application_version`)
 * Application URIs (`application_uris`)
-* Cloud Foundry API (`cf_api`)
 * Labels and names of bound services
 * Number of instances for each bound service and associated plan information
 * Metadata in the repository.yaml file

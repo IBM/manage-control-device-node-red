@@ -28,6 +28,7 @@ var currentCredRev = null;
 
 var libraryCache = {};
 
+// create and save to json
 function prepopulateFlows(resolve) {
     var key = appname+"/"+"flow";
     flowDb.get(key,function(err,doc) {
@@ -69,7 +70,7 @@ function prepopulateFlows(resolve) {
     });
 }
 
-
+// creds management
 var couchstorage = {
     init: function(_settings) {
         settings = _settings;
@@ -240,7 +241,7 @@ var couchstorage = {
             });
         });
     },
-
+    // manage flows
     getAllFlows: function() {
         var key = [appname,"flow"];
         return when.promise(function(resolve,reject) {
@@ -306,7 +307,7 @@ var couchstorage = {
 
         });
     },
-
+    // process library entries
     getLibraryEntry: function(type,path) {
         var key = appname+"/lib/"+type+(path.substr(0)!="/"?"/":"")+path;
         if (libraryCache[key]) {

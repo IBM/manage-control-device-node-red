@@ -5,7 +5,7 @@ applications:
   domain: mybluemix.net
   name: simulate-iot
   random-route: true
-  disk_quota: 1024M
+  disk_quota: 512M
   services:
   - availability-monitoring-auto
   - simulate-iot-iotf-service
