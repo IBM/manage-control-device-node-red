@@ -1,5 +1,5 @@
-Skill Level: Any Skill Level
-<br><u>N.B:</u> All services used in this repo are Lite plans.
+**__Skill Level__**: Any Skill Level
+<br>**__N.B__**: All services used in this repo are Lite plans.
 
 ![IBM Cloud Deployments](https://metrics-tracker.mybluemix.net/stats/103baca0d9db927ea5e6decf1da19ff3/badge.svg)
 
