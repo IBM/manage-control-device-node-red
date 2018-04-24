@@ -11,12 +11,13 @@ Build an IoT project with a simualted device that sends events for data monitori
 ## Overview and goal
 This guide steps you through the process of connecting devices to Watson IoT Platform, monitoring and acting on device data.
 
-<u>The outcome of this project will help you: </u>
+__The outcome of this project will help you:__
 1. manage and control simulated devices
 2. control their speed
 3. understand and hands-on the IoT Platform
-4. Explore different ways on how to visualize your data
-5. Explore different ways to build an UI with node-red
+4. Save and make use of this data with Cloudant
+5. Explore different ways on how to visualize your data
+6. Explore different ways to build an UI with node-red
 
 We set up a connected simulated motor and use it to send IoT data to Watson IoT Platform.
 
@@ -52,9 +53,9 @@ After deploying the application, please continue with [Step 3 - See raw data in 
 ## Steps
 1) [Deploy Watson IoT Platform](#step-1----deploy-watson-iot-platform)
 2) [Deploy the node-red simulate iot app (make sure you rename your app)](#step-2---deploy-the-sample-simulate-iot-web-application)
-3) [Store data in Cloudant database](#cloudant-will-be-part-of-this-setup)
-4) [See raw data in Watson IoT Platform](#step-3---see-raw-data-in-watson-iot-platform)
-5) [Visualize live data in Watson IoT Platform](#step-4---visualize-live-data-in-watson-iot-platform)
+3) [Store data in Cloudant database](#step-3---cloudant-will-be-part-of-this-setup)
+4) [See raw data in Watson IoT Platform](#step-4---see-raw-data-in-watson-iot-platform)
+5) [Visualize live data in Watson IoT Platform](#step-5---visualize-live-data-in-watson-iot-platform)
 
 ## Step 1 -  Deploy Watson IoT Platform
 
@@ -122,7 +123,7 @@ Example: `https://simulate-iot.mybluemix.net/`.
 Copy from flow folder the content of flow.txt into `https://simulate-iot.mybluemix.net/red` after you setup an username/password. Paste it under the Menu tab -> Import -> Clipboard and press Import. Now ready for `https://YOUR_APP_NAME.mybluemix.net/motor`
 ```
 
-## Cloudant database will be part of this setup
+## Step 3 - Cloudant database will be part of this setup
 
 [Live Demo](https://simulate-iot.mybluemix.net/motor)
 
@@ -133,7 +134,7 @@ Copy from flow folder the content of flow.txt into `https://simulate-iot.mybluem
 
 > [How to create an API key and token in Watson IoT Platform](https://developer.ibm.com/code/howtos/#!/howto/iot-generate-apikey-apitoken)
 
-## Step 3 - See raw data in Watson IoT Platform
+## Step 4 - See raw data in Watson IoT Platform
 
 1. Verify that the device is registered with Watson IoT Platform.
     * Login to your IBM Cloud dashboard at:  [https://bluemix.net](https://bluemix.net/)
@@ -169,7 +170,7 @@ Message example A:
 }
   ```
 
-## Step 4 - Visualize live data in Watson IoT Platform
+## Step 5 - Visualize live data in Watson IoT Platform
 
 To create a dashboard card to see live motor device data:
 1. On the same Device Centric Analytics board, click **Add New Card** and then select **Line Chart**.
