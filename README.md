@@ -47,7 +47,7 @@ If you want to deploy directly to IBM Cloud, click on `Deploy to IBM Cloud` butt
 
 [![Deploy to IBM Cloud](https://metrics-tracker.mybluemix.net/stats/103baca0d9db927ea5e6decf1da19ff3/button.svg)](https://console.ng.bluemix.net/devops/setup/deploy/?repository=https://github.com/IBM/manage-control-device-node-red)
 
-After deploying the application, please continue with [Step 3 - See raw data in Watson IoT Platform](#step-3---see-raw-data-in-watson-iot-platform).
+After deploying the application, please continue with [Step 4 - See raw data in Watson IoT Platform](#step-4---see-raw-data-in-watson-iot-platform).
 
 > You can also create a Node-Red app manually from IBM Cloud Catalog.
 ## Steps
@@ -130,7 +130,7 @@ Copy from flow folder the content of flow.txt into `https://simulate-iot.mybluem
 ![simulate iot app](images/simulate-iot-flow.PNG)
 
 * For more information about registering devices, see [Connecting devices](https://console.bluemix.net/docs/services/IoT/iotplatform_task.html#iotplatform_subtask1).
-4. Continue with [Step 3 - See raw data in Watson IoT Platform](#step-3---see-raw-data-in-watson-iot-platform).
+4. Continue with [Step 4 - See raw data in Watson IoT Platform](#step-4---see-raw-data-in-watson-iot-platform).
 
 > [How to create an API key and token in Watson IoT Platform](https://developer.ibm.com/code/howtos/#!/howto/iot-generate-apikey-apitoken)
 
