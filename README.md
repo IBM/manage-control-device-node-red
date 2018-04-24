@@ -123,7 +123,7 @@ Example: `https://simulate-iot.mybluemix.net/`.
 Copy from flow folder the content of flow.txt into `https://simulate-iot.mybluemix.net/red` after you setup an username/password. Paste it under the Menu tab -> Import -> Clipboard and press Import. Now ready for `https://YOUR_APP_NAME.mybluemix.net/motor`
 ```
 
-## Step 3 - Cloudant database will be part of this setup
+> ## Step 3 - Cloudant database will be part of this step 2 setup
 
 [Live Demo](https://simulate-iot.mybluemix.net/motor)
 
