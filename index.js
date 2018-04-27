@@ -18,7 +18,6 @@ var when = require("when");
 var bcrypt = require("bcrypt");
 var util = require("util");
 var path = require("path");
-require('metrics-tracker-client').track();
 
 
 util.log("Starting Node-RED on Bluemix bootstrap");
