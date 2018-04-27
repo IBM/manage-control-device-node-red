@@ -10,7 +10,6 @@
         "express":"4.x",
         "body-parser":"1.x",
         "http-shutdown":"1.2.0",
-        "metrics-tracker-client": "*",
         "node-red": "0.x",
         "node-red-bluemix-nodes":"1.x",
         "node-red-node-watson":"0.x",
