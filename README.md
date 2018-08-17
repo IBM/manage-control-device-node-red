@@ -40,6 +40,7 @@ You will need the following accounts and tools:
 * Optional: [Git](https://git-scm.com/downloads)
 If you choose to use Git to download the code samples you must also have a [GitHub.com account](https://github.com). You can also download the code as a compressed file without a GitHub.com account.
 
+<hr>
 
 ## Steps
 1) [Deploy Watson IoT Platform](#step-1----deploy-watson-iot-platform)
@@ -47,6 +48,8 @@ If you choose to use Git to download the code samples you must also have a [GitH
 3) [Store data in Cloudant database](#step-3---cloudant-will-be-part-of-this-setup)
 4) [See raw data in Watson IoT Platform](#step-4---see-raw-data-in-watson-iot-platform)
 5) [Visualize live data in Watson IoT Platform](#step-5---visualize-live-data-in-watson-iot-platform)
+
+<hr>
 
 ## Step 1 -  Deploy Watson IoT Platform
 
@@ -70,9 +73,13 @@ This sample is using a motor which is a simulated device and can be replaced wit
 Open the following URL: `https://YOUR_APP_NAME.mybluemix.net`    
 Example: `https://simulate-iot.mybluemix.net/`.
 
-```
-Copy from flow folder the content of flow.txt into `https://simulate-iot.mybluemix.net/red` after you setup an username/password. Paste it under the Menu tab -> Import -> Clipboard and press Import. Now ready for `https://YOUR_APP_NAME.mybluemix.net/motor`
-```
+
+__Make sure that the following instructions have been addressed in `Step 1`:__
+
+* Copy from flow folder the content of flow.txt into `https://simulate-iot.mybluemix.net/red` after you setup an username/password.
+* Paste it under the `Menu tab -> Import -> Clipboard` and press `Import`.
+* Now ready for `https://YOUR_APP_NAME.mybluemix.net/motor`
+
 
 <hr>
 
