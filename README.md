@@ -40,14 +40,7 @@ You will need the following accounts and tools:
 * Optional: [Git](https://git-scm.com/downloads)
 If you choose to use Git to download the code samples you must also have a [GitHub.com account](https://github.com). You can also download the code as a compressed file without a GitHub.com account.
 
-## Deploy to IBM Cloud
-If you want to deploy directly to IBM Cloud, click on `Deploy to IBM Cloud` button below to create a IBM Cloud DevOps service toolchain and pipeline for deploying basic motor with an IoT device that sends monitoring data to Watson IoT Platform on IBM Cloud, else jump to [Steps](#steps)
 
-[![Deploy to IBM Cloud](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM/manage-control-device-node-red)
-
-After deploying the application, please continue with [Step 4 - See raw data in Watson IoT Platform](#step-4---see-raw-data-in-watson-iot-platform).
-
-> You can also create a Node-Red app manually from IBM Cloud Catalog.
 ## Steps
 1) [Deploy Watson IoT Platform](#step-1----deploy-watson-iot-platform)
 2) [Deploy the node-red simulate iot app (make sure you rename your app)](#step-2---deploy-the-sample-simulate-iot-web-application)
@@ -57,42 +50,11 @@ After deploying the application, please continue with [Step 4 - See raw data in 
 
 ## Step 1 -  Deploy Watson IoT Platform
 
-> Watson IoT Platform provides powerful application access to IoT devices and data to help you rapidly compose analytics applications, visualization dashboards, and mobile IoT apps. The steps that follow will deploy an instance of the Watson IoT Platform service with the name `simulate-iot` in your IBM Cloud environment. If you already have a service instance running, you can use that instance with the guide and skip this first step. Just make sure that you use the correct service name and IBM Cloud space when you proceed through the guides.
+Watson IoT Platform provides powerful application access to IoT devices and data to help you rapidly compose analytics applications, visualization dashboards, and mobile IoT apps. The steps that follow will deploy an instance of the Watson IoT Platform service with the name `simulate-iot` in your IBM Cloud environment. If you already have a service instance running, you can use that instance with the guide and skip this first step. Just make sure that you use the correct service name and IBM Cloud space when you proceed through the guides.
 
-1. From the command line, set your API endpoint by running the bx api command.   
-Replace the `API-ENDPOINT` value with the API endpoint for your region.
-```
-bx api <API-ENDPOINT>
-```
-Example: `bx api https://api.ng.bluemix.net`
-<table>
-<tr>
-<th>Region</th>
-<th>API Endpoint</th>
-</tr>
-<tr>
-<td>US South</td>
-<td>https://api.ng.bluemix.net</td>
-</tr>
-<tr>
-<td>United Kingdom</td>
-<td>https://api.eu-gb.bluemix.net</td>
-</tr>
-</table>
+[Create a Node-Red boilerplate](steps/nodered.md) from IBM Cloud Catalog that will include Node-RED editor, Cloudant database and Watson IoT Platform service. Follow the steps and make sure to import the scripts into your Node-RED editor.
 
-2. Log into your IBM Cloud account.
-```
-bx login -u YOUR_BLUEMIX_USERNAME -o org_name -s space_name
-```
-If prompted, select the organization and space where you want to deploy Watson IoT Platform and the sample app. **Note** example a) org: john.doe@ibm.com  b) space = dev
-
-3. Deploy the Watson IoT Platform service to IBM Cloud.
-```    
-bx create-service iotf-service iotf-service-free YOUR_IOT_PLATFORM_NAME
-```
-
-For YOUR_IOT_PLATFORM_NAME, use *simulate-iot*.  
-Example: `bx create-service iotf-service iotf-service-free simulate-iot`
+<hr>
 
 ## Step 2 - Deploy the sample simulate IoT web application  
 
@@ -104,15 +66,6 @@ This sample is using a motor which is a simulated device and can be replaced wit
 
 ![simulate iot app](images/simulate-iot-v02.PNG)
 
-**To deploy this setup from a terminal instead, you can use the following commands:**
-```
-bx api https://api.ng.bluemix.net
-bx login -u YOUR_BLUEMIX_USERNAME -o org_name -s space_name
-bx create-service iotf-service iotf-service-free simulate-iot
-bx app push YOUR_APP_NAME
-```
-> To troubleshoot errors, use `bx app logs YOUR_APP_NAME --recent` command (i.e. `bx app logs simulate-iot --recent`).
-
 * In a browser, access the app.  
 Open the following URL: `https://YOUR_APP_NAME.mybluemix.net`    
 Example: `https://simulate-iot.mybluemix.net/`.
@@ -120,6 +73,8 @@ Example: `https://simulate-iot.mybluemix.net/`.
 ```
 Copy from flow folder the content of flow.txt into `https://simulate-iot.mybluemix.net/red` after you setup an username/password. Paste it under the Menu tab -> Import -> Clipboard and press Import. Now ready for `https://YOUR_APP_NAME.mybluemix.net/motor`
 ```
+
+<hr>
 
 > ## Step 3 - Cloudant database will be part of this step 2 setup
 
@@ -130,7 +85,9 @@ Copy from flow folder the content of flow.txt into `https://simulate-iot.mybluem
 * For more information about registering devices, see [Connecting devices](https://console.bluemix.net/docs/services/IoT/iotplatform_task.html#iotplatform_subtask1).
 4. Continue with [Step 4 - See raw data in Watson IoT Platform](#step-4---see-raw-data-in-watson-iot-platform).
 
-> [How to create an API key and token in Watson IoT Platform](https://developer.ibm.com/code/howtos/#!/howto/iot-generate-apikey-apitoken)
+> [How to create an API key and token in Watson IoT Platform](https://developer.ibm.com/code/howtos/iot-generate-apikey-apitoken)
+
+<hr>
 
 ## Step 4 - See raw data in Watson IoT Platform
 
@@ -139,7 +96,7 @@ Copy from flow folder the content of flow.txt into `https://simulate-iot.mybluem
     * From [your list of services](https://bluemix.net/dashboard/services), click the *simulate-iot-iotf-service* Watson IoT Platform} service.
     * Click *Launch* to open the Watson IoT Platform dashboard in a new browser tab.  
         You can bookmark the URL for easy access later.   
-        Example: `https://*iot-org-id*.internetofthings.ibmcloud.com`.
+        Example: `https://<ORG_ID>.internetofthings.ibmcloud.com`.
     * From the menu, select **Devices** and verify that your new device is displayed.
 
 2. View raw data
@@ -168,6 +125,8 @@ Message example A:
 }
   ```
 
+<hr>
+
 ## Step 5 - Visualize live data in Watson IoT Platform
 
 To create a dashboard card to see live motor device data:
@@ -187,6 +146,8 @@ A list of card names is displayed.
 8. Change the speed of your motor to see live data in your new card.
 9. Optional: Add a second data set to add acceleration data for the motor.
 ![speed-chart](https://github.com/IBM/manage-control-device-node-red/blob/master/images/speed-chart.PNG)  
+
+<hr>
 
 For more information about creating boards and cards, see [Visualizing real-time data by using boards and cards](https://console.bluemix.net/docs/services/IoT/data_visualization.html#boards_and_cards).
 
