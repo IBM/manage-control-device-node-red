@@ -6,13 +6,13 @@
 
 <hr>
 
-![](../img/node-red-catalog.png)
+![](../images/node-red-catalog.png)
 
 <hr>
 
 * Increase the `GB MEMORY PER INSTANCE` to 1 to avoid deploy failures
 
-![](../img/node-red-running-instance.png)
+![](../images/node-red-running-instance.png)
 
 <hr>
 
