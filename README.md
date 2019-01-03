@@ -36,7 +36,7 @@ Click here to view the [IBM Pattern](https://developer.ibm.com/code/patterns/dev
 ## Prerequisites
 You will need the following accounts and tools:
 * [IBM Cloud account](https://console.ng.bluemix.net/registration/)
-* [Bluemix CLI](https://console.bluemix.net/docs/cli/reference/bluemix_cli/index.html)
+* [Bluemix CLI](https://console.bluemix.net/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_cli)
 * Optional: [Git](https://git-scm.com/downloads)
 If you choose to use Git to download the code samples you must also have a [GitHub.com account](https://github.com). You can also download the code as a compressed file without a GitHub.com account.
 
@@ -85,9 +85,13 @@ __Make sure that the following instructions have been addressed in `Step 1`:__
 
 > ## Step 3 - Cloudant database will be part of this step 2 setup
 
-[Live Demo](https://simulate-iot.mybluemix.net/motor)
+[Live Demo](https://avoda.mybluemix.net/belt)
 
 ![simulate iot app](images/simulate-iot-flow.PNG)
+
+* Make sure to change `https://simulate-iot.mybluemix.net/` to `<YOUR_APP_NAME>.mybluemix.net/` in `UI Displaysubmit` node.
+
+* UI is accessible at `<YOUR_APP_NAME>.mybluemix.net/motor` or `<YOUR_APP_NAME>.mybluemix.net/belt`
 
 * For more information about registering devices, see [Connecting devices](https://console.bluemix.net/docs/services/IoT/iotplatform_task.html#iotplatform_subtask1).
 4. Continue with [Step 4 - See raw data in Watson IoT Platform](#step-4---see-raw-data-in-watson-iot-platform).
