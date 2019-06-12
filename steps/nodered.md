@@ -19,7 +19,7 @@
 * Click on the `Visit App URL`
 * Open the Node-RED editor and setup your own `username` and `password`
 * On the top right side of the editor, click on: `Burger Menu` -> `Import` -> `Clipboard`
-* Copy the code from the [flow/flow.json](flow/flow.json) in this Github repository
+* Copy the code from the [flow/flow.json](../flow/flow.json) in this Github repository
 * Paste the code in the `Clipboard` in the Node-RED editor
 
 ![](../images/simulate-iot-flow.PNG)
