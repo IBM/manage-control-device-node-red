@@ -5,7 +5,7 @@
         "when": "~3.x",
         "mongodb": "~1.4.x",
         "nano": "6.2.x",
-        "bcrypt": "1.0.2",
+        "bcrypt": "5.0.0",
         "cfenv":"~1.0.0",
         "express":"4.x",
         "body-parser":"1.x",
